@@ -1,0 +1,10 @@
+#{extends 'main.html' /}
+#{set title:'Home' /}
+
+
+
+<script type="text/javascript" charset="${_response_encoding}">
+    setInterval(function() {
+        $('section').load('@{index()} #time')
+    }, 1000)
+</script>

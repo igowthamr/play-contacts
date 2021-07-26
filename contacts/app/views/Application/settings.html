@@ -1,0 +1,29 @@
+#{extends 'main.html' /}
+#{set title:'Form' /}
+
+#{form @saveSettings()}
+    
+ <input type="hidden" name="user.email" value="${user?.email}">
+ 
+    <p class="field">
+        <label for="id">Id :</label>
+        <input type="text" readonly="true" id="id" name="user.id" value="${user?.id}">
+        <span class="error">${errors.forKey('user.hours')}</span>
+    </p>
+    
+    <p class="field">
+        <label for="name">Hours :</label>
+        <input type="text" id="name" name="user.hours" value="${user?.hours}">
+        <span class="error">${errors.forKey('user.hours')}</span>
+    </p>
+
+    
+
+    <p class="buttons">
+     	<a href="@{settings()}">Cancel</a> or <input type="submit" value="Save" id="saveSettings">
+    </p>
+    
+    <script type="text/javascript" charset="${_response_encoding}">
+        $("#birthdate").datepicker({dateFormat:'yy-mm-dd', showAnim:'fadeIn'})
+	</script>
+#{/form}

@@ -1,0 +1,42 @@
+
+
+User(gowtham):
+    email: gowtham@xyz.com
+    password: abcd
+    hours : 8
+  
+    
+User(gowtham2):
+    email: gowtham2@xyz.com
+    password: abcd
+           
+User(dharshan):
+    email: dharshan@xyz.com
+    password: xyz
+
+Contact(warry):
+    name:       Dantec
+    firstname:  Maxime
+    birthdate:  1985-11-12
+    email:      hello@warry.fr
+    user:       gowtham
+   
+
+Contact(guillaume):
+    name:       Bort
+    firstname:  Guillaume
+    birthdate:  1980-07-27
+    email:      guillaume.bort@gmail.com
+    user:       gowtham
+
+Contact(たの):
+    name:       鈴木
+    firstname:  太郎
+    birthdate:  1970-05-13
+    email:      contact@japan.com
+    user:       gowtham2
+    
+
+    
+
+    

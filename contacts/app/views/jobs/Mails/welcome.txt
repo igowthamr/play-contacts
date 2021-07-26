@@ -1,0 +1,8 @@
+Welcome ${user.name}
+
+Following have their birthday coming in next ${user.hours} hours
+
+#{list contacts, as:'contact'}
+${contact.name}
+
+#{/list}
